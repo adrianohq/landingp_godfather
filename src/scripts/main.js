@@ -8,23 +8,19 @@ document.addEventListener('DOMContentLoaded', function() {
     const links = document.querySelector('.header__links');
 
     hamburger.addEventListener('click', function() {
-        if (links.style.display === 'none' || links.style.display === '') {
-            links.style.display = 'flex';
-        } else {
-            links.style.display = 'none';
-        }
+        links.classList.toggle('show-menu');
     });
 
     const menuItems = document.querySelectorAll('.header__links__item a');
     menuItems.forEach(item => {
         item.addEventListener('click', function() {
-            links.style.display = 'none';
+            links.classList.remove('show-menu');
         });
     });
 
     window.addEventListener('click', function(event) {
         if (!event.target.matches('.header__hamburger') && !event.target.matches('.header__links') && !event.target.closest('.header__links')) {
-            links.style.display = 'none';
+            links.classList.remove('show-menu');
         }
     });
 
@@ -36,9 +32,9 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             showLogoHeader();
         }
-    })
+    });
 
-    for (let i = 0; i< itens.length; i++) {
+    for (let i = 0; i < itens.length; i++) {
         itens[i].addEventListener('click', openCloseBio);
     }
 })
@@ -57,6 +53,5 @@ function openCloseBio(element) {
     const classe = 'cast__list__item--is-open';
     const elementFather = element.target.parentNode;
 
-    elementFather.classList.toggle(classe)
+    elementFather.classList.toggle(classe);
 }
-
