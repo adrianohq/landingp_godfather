@@ -1,5 +1,9 @@
 @use 'variaveis';
+@use 'header';
 @use 'hero';
+@use 'cast';
+@use 'plataforms';
+@use 'footer';
 
 @font-face {
     font-family: TT Interphases;
@@ -79,7 +83,7 @@ body {
     @include title(28px);
 
     @media (max-width: 768px) {
-        @include title(22px);
+        @include title(20px);
     }
 }
 
@@ -90,13 +94,14 @@ body {
 }
 
 .image-text-section {
-    padding: 5.6vw;
+    padding: 5vw 5.6vw 10vw 5.6vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
 
     @media (max-width: 768px) {
         display: block;
+        padding: 10vw;
     }
 
 
@@ -107,9 +112,36 @@ body {
     &__text_container {
         padding: 0 2vw;
 
+        @media (max-width: 768px) {
+            position: relative;
+            left: 0;
+            width: 100%;
+        }
+
         h2 {
             margin-bottom: 24px;
         }
+
+        p {
+            margin-bottom: 16px;
+        }
     }
 }
+
+iframe {
+    width: 843px; 
+    height: 562px; 
+
+    @media (max-width: 768px) {
+            width: 100%; 
+            height: auto; 
+    }
+
+}
+
+a {
+    text-decoration: none;
+}
+
+
 

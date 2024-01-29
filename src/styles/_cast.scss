@@ -1,0 +1,95 @@
+@use 'variaveis';
+
+.cast {
+    padding: 0 5.6vw;  
+
+    &__list {
+        
+        &__item {
+            background-color: variaveis.$corCastPrimary;
+            margin-bottom: 16px;
+            display: flex;
+            flex-direction: column;
+
+            &__actor {
+                color: #FFF;
+                font-size: 20px;
+                padding: 24px;
+                display: flex;
+                cursor: pointer;
+                position: relative;
+                text-align: center;
+                align-items: center;
+                justify-content: flex-start;
+                
+
+                img {
+                    width: 150px;
+                    max-width: 100%;
+                    margin-right: 16px;
+
+                    @media (max-width: 768px) {
+                            width: 70px;
+                            max-width: 100%;
+                            margin: 0;
+
+                    }
+                }
+
+                @media (max-width: 768px) {
+                    font-size: 15px;
+                }
+
+                &::after {
+                    content: '↓';
+                    position: absolute;
+                    top: 0;
+                    right: 24px;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+
+                    @media (max-width: 768px) {
+                        right: 12px;
+                    }
+                }
+            }
+
+            &__bio {
+                height: 0;
+                overflow: hidden;
+                padding: 0 24px;
+                transition: height, 0.5s ease;
+            }
+
+            &--is-open {
+                background-color: variaveis.$corCastSecundary;
+                margin-bottom: 16px;
+
+                .cast__list__item__actor::after {
+                    content: '↑';
+                }
+
+                img {
+                    width: 200px;
+                    max-width: 100%;
+                    transition: width, 0.5s ease;
+
+                    @media (max-width: 768px) {
+                        display: none;
+                    }
+                }
+
+                .cast__list__item__bio {
+                    height: auto;
+                    padding-bottom: 24px;
+                    transition: height, 0.5s ease;
+                }
+            }
+
+            &:hover {
+                background-color: variaveis.$corCastSecundary
+            }
+        }
+    }
+}

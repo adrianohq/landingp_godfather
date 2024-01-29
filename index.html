@@ -7,10 +7,41 @@
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
-    <section class="hero">
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img src="dist/images/godfather.png" alt="O Poderoso Chefão" class="header__logo">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a href="#hero">Início</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#sinopse">Sinopse</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#trailer">Trailer</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#elenco">Elenco</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#curiosidades">Curiosidades</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#onde_assistir">Onde assistir</a>
+                </li>
+            </ul>
+            <div class="header__hamburger">&#9776;</div>
+        </div>
+    </header>
+
+    <section class="hero" id="hero">
         <div class="hero__content">
             <div class="hero__content__branding">
                 <img src="./dist/images/godfather.png" alt="O Poderoso Chefão">
+                <hr>
+                <p class="title--small">• Policial • 1972 <br>• 2 h 55 min • +14</p>
                 <hr>
             </div>
             
@@ -24,12 +55,13 @@
                     O Diretor Coppola equilibra magistralmente a incrível história da vida da família Corleone e o péssimo negócio
                     do
                     qual fazem parte.
+                    <br>
+                    
                 </span>
             </p>
         </div>
     </section>
-    <section class="image-text-section">
-        <img src="./dist/images/cena1.jpg" alt="Família Corleone">
+    <section class="image-text-section" id="sinopse">
         <div class="image-text-section__text_container">
             <h2 class="title">Sinopse</h2>
             <p class="text--big">
@@ -67,15 +99,157 @@
                 amplamente reconhecido como uma obra-prima cinematográfica.
             </p>
         </div>
+        <img src="./dist/images/cena1.jpg" alt="Família Corleone">
     </section>
-    <section class="image-text-section">
+    <section class="image-text-section" id="trailer">
         <div class="image-text-section__text_container">
             <h2 class="title">Trailer</h2>
             <p class="text--big">
-                Explore a obra-prima que redefiniu o gênero dos filmes de gangster e deixou uma marca indelével na história do cinema.
+                Entre nas sombras do submundo da máfia com 'O Poderoso Chefão', uma obra-prima cinematográfica que
+                transcende gerações. Dirigido por Francis Ford Coppola, o filme mergulha os espectadores nas intrigas
+                familiares da família Corleone, destacando a ascensão e os desafios de Don Vito Corleone, interpretado
+                magistralmente por Marlon Brando. Este trailer oferece um vislumbre intenso do clássico, repleto de drama,
+                traição e poder. Prepare-se para uma jornada inesquecível pelo universo do crime organizado e da lealdade em
+                'O Poderoso Chefão'. Uma saga que permanece tão impactante quanto o dia em que foi lançada.
             </p>
         </div>
-        <iframe width="843" height="562" src="https://www.youtube.com/embed/0v6MO0EB7UY?si=WH4wqbzaAf2Wl3wI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; gyroscope; web-share" allowfullscreen></iframe>
+        <iframe width="843" height="562" src="https://www.youtube.com/embed/0v6MO0EB7UY?si=WH4wqbzaAf2Wl3wI"
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; gyroscope; web-share"
+            allowfullscreen></iframe>
     </section>
+    <section class="image-text-section" id="elenco">
+        <div class="image-text-section__text_container">
+            <h2 class="title">Elenco</h2>
+            <p class="text--big">
+                Entre nas sombras do submundo da máfia com 'O Poderoso Chefão', uma obra-prima cinematográfica que
+                transcende gerações. Dirigido por Francis Ford Coppola, o filme mergulha os espectadores nas intrigas
+                familiares da família Corleone, destacando a ascensão e os desafios de Don Vito Corleone, interpretado
+                magistralmente por Marlon Brando. Este trailer oferece um vislumbre intenso do clássico, repleto de drama,
+                traição e poder. Prepare-se para uma jornada inesquecível pelo universo do crime organizado e da lealdade em
+                'O Poderoso Chefão'. Uma saga que permanece tão impactante quanto o dia em que foi lançada.
+            </p>
+        </div>
+        <div class="cast">
+            <ul class="cast__list">
+                <li class="cast__list__item">
+                    <div class="cast__list__item__actor title--small" data-list-item>
+                        <img src="./dist/images/cast/marlon_brando.jpeg" alt="Marlon Brando">
+                        Marlon Brando (Vito Corleone)
+                    </div>
+                    <div class="cast__list__item__bio text">
+                        Marlon Brando é a personificação da figura central, Don Vito Corleone. Sua interpretação magistral do patriarca da família Corleone lhe rendeu um Oscar e estabeleceu o padrão para personagens de chefes da máfia.
+                    </div>
+                </li>
+                <li class="cast__list__item">
+                    <div class="cast__list__item__actor title--small" data-list-item>
+                        <img src="./dist/images/cast/al_pacino.jpeg" alt="Al Pacino">
+                        Al Pacino (Michael Corleone)
+                    </div>
+                    <div class="cast__list__item__bio text">
+                        Al Pacino deslumbra como Michael Corleone, o filho mais jovem de Vito, que, inicialmente relutante em entrar no mundo do crime, eventualmente se torna uma figura central na trama. Sua jornada é interpretada com intensidade por Pacino.
+                    </div>
+                </li>
+                <li class="cast__list__item">
+                    <div class="cast__list__item__actor title--small" data-list-item>
+                        <img src="./dist/images/cast/james_caan.jpg" alt="James Caan">
+                        James Caan (Sonny Corleone)
+                    </div>
+                    <div class="cast__list__item__bio text">
+                        James Caan assume o papel de Sonny Corleone, o impulsivo e temperamental filho mais velho de Vito. Caan traz uma energia explosiva ao retratar a complexidade do personagem.
+                    </div>
+                </li>
+                <li class="cast__list__item">
+                    <div class="cast__list__item__actor title--small" data-list-item>
+                        <img src="./dist/images/cast/robert_duvall.jpg" alt="Robert Duvall">
+                        Robert Duvall (Tom Hagen)
+                    </div>
+                    <div class="cast__list__item__bio text">
+                        Robert Duvall interpreta Tom Hagen, o advogado e consigliere da família Corleone. Duvall entrega uma performance cativante como o confidente leal de Vito.
+                    </div>
+                </li>
+                <li class="cast__list__item">
+                    <div class="cast__list__item__actor title--small" data-list-item>
+                        <img src="./dist/images/cast/diane_keaton.jpg" alt="Diane Keaton">
+                        Diane Keaton (Kay Adams)
+                    </div>
+                    <div class="cast__list__item__bio text">
+                        Diane Keaton traz uma presença elegante ao papel de Kay Adams, a esposa de Michael Corleone. Sua interpretação adiciona uma dimensão emocional e conflitante ao enredo.
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="image-text-section" id="curiosidades">
+        <div class="image-text-section__text_container">
+            <h2 class="title">Curiosidades</h2>
+            <h3 class="title--small">Improviso do Gato</h3>
+            <p class="text--big">
+                Na famosa cena em que Marlon Brando, interpretando Don Vito Corleone, acaricia um gato enquanto faz uma oferta que não pode ser recusada, o uso do gato não estava originalmente no roteiro. O animal pertencia a uma das equipes de filmagem e foi adicionado espontaneamente por Brando. O diretor Francis Ford Coppola gostou tanto da cena que decidiu incluí-la no filme.
+            </p>
+            <h3 class="title--small">Rejeição de Al Pacino</h3>
+            <p class="text--big">
+                Al Pacino, que interpretou Michael Corleone, inicialmente recusou o papel no filme. Ele achava o roteiro muito violento e não queria fazer parte de um filme que glamorizasse o crime. No entanto, após a persuasão do diretor Coppola e algumas alterações no roteiro, Pacino aceitou o papel, marcando o início de uma carreira lendária.
+            </p>
+            <h3 class="title--small">O Poderoso Chefão de Coppola</h3>
+            <p class="text--big">
+                Antes de dirigir "O Poderoso Chefão", Francis Ford Coppola estava enfrentando dificuldades financeiras e quase foi demitido do projeto várias vezes pelos produtores do estúdio. Sua visão única e dedicação ao filme resultaram em uma obra-prima que não apenas salvou sua carreira, mas também definiu novos padrões para o cinema.
+            </p>
+            <h3 class="title--small">O Oscar de Marlon Brando</h3>
+            <p class="text--big">
+                Marlon Brando ganhou o Oscar de Melhor Ator pelo seu papel como Don Vito Corleone. No entanto, em uma atitude controversa, Brando recusou o prêmio como protesto contra a representação dos nativos americanos na indústria cinematográfica. Ele enviou uma ativista nativa americana chamada Sacheen Littlefeather para recusar o prêmio em seu nome durante a cerimônia.
+            </p>
+            <h3 class="title--small">Influência na Máfia Real</h3>
+            <p class="text--big">
+                O filme teve uma influência significativa na cultura popular e até mesmo entre membros da máfia real. Alguns relatos indicam que a Cosa Nostra, a máfia ítalo-americana, apreciou a precisão e autenticidade do filme, embora a representação fosse fictícia. O autor do livro original, Mario Puzo, baseou seu trabalho em histórias reais e pesquisas extensas sobre a máfia.
+            </p>
+        </div>
+        <img src="./dist/images/cena2.jpg" alt="Família Corleone">
+    </section>
+    <section class="plataform" id="onde_assistir">
+        <h2 class="title">Onde Assistir</h2>
+        <ul class="plataform__list">
+            <li class="plataform__list__item">
+                <img src="./src/images/logos/paramount2.png" alt="Computador">
+                <a href="https://www.paramountplus.com/movies/godfather/r6s5b8Qazrr34GXVSM4LwO4_OBB0Mwih?searchReferral=desktop-web&source=google-organic&ftag=IPP-23-10ahb6g"><button class="button">Assistir ►</button></a>
+                <p class="text--small">
+                    Mediante assinatura.
+                </p>
+            </li>
+            <li class="plataform__list__item">
+                <img src="./dist/images/logos/star.png" alt="TV">
+                <a href="https://www.starplus.com/video/a5a056c3-c9c7-4bef-a2c3-bd1eaf8ae4d7?distributionPartner=google"><button class="button">Assistir ►</button></a>
+                <p class="text--small">
+                    Mediante assinatura.
+                </p>
+            </li>
+            <li class="plataform__list__item">
+                <img src="./dist/images/logos/apple.png" alt="Videogame">
+                <a href="https://tv.apple.com/br/movie/o-poderoso-chefao-legendado/umc.cmc.3ew9fykdnpfaq9t2jq5da011c?action=play"><button class="button">Assistir ►</button></a>
+                <p class="text--small">
+                    Mediante assinatura.
+                </p>
+            </li>
+            <li class="plataform__list__item">
+                <img src="./dist/images/logos/youtube.png" alt="Celulares e tablets">
+                <a href="https://www.youtube.com/watch?v=88nc6NwAQG4"><button class="button">Assistir ►</button></a>
+                <p class="text--small">
+                    Mediante aluguel ou assinatura.
+                </p>
+            </li>
+        </ul>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__logo" src="dist/images/godfather.png" alt="O Poderoso Chefão">
+        <p class="text--small">
+            ® 1972 Paramount Pictures. All Rights Reserved. TM, & Copyright 2004 by Paramount Pictures. All Rights Reserved
+        </p>
+        <p class="text--small">
+            Development by Adriano de Queiroz
+        </p>
+        </div>
+    </footer>
+
+    <script src="dist/js/main.js"></script>
 </body>
 </html>

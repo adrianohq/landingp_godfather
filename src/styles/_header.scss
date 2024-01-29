@@ -1,0 +1,120 @@
+@use 'variaveis';
+
+.header {
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: variaveis.$corDeFundo;
+    transition: background-color .5 ease;
+    
+    z-index: 1;
+
+    &--is-hidden {
+        background-color: transparent;
+        transition: background-color .5s ease;
+
+        .header {
+            &__logo {
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity .5s ease;
+
+                @media (max-width: 768px) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &__container {
+        display: flex;
+        justify-content: left;
+    }
+
+    &__logo {
+        padding-left: 36px;
+        max-width: 80px;
+        width: 100%;
+        margin: 5px;
+        transition: opacity .5s ease;
+    }
+
+    &__links {
+        display: flex;
+        margin-left: 8.5vw;
+
+        &__item {
+            margin: 5px;
+            list-style: none;
+
+            a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: variaveis.$corTextoPrincipal;
+            font-size: 16px;
+            padding: 14px 14px;
+
+            &:hover {
+                color: variaveis.$corBotaoPrimario;
+                border-bottom: variaveis.$corBotaoPrimario 2px solid;
+            }
+
+            
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        &__logo {
+            display: none;
+        }
+        &__links {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            max-width: 250px;
+            margin: 0;
+            position: relative;
+            top: 10px; 
+            background-color: variaveis.$corDeFundo;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+
+            &__item {
+                width: 100%;
+                text-align: center;
+                padding: 14px 0;
+                box-sizing: border-box;
+                border-bottom: 1px solid variaveis.$corTextoPrincipal;
+            }
+        }
+
+        
+
+        &__hamburger {
+            display: block;
+            font-size: 24px;
+            height: 20px;
+            margin-bottom: 24px;
+            cursor: pointer;
+            color: variaveis.$corTextoSecundario;
+        }
+    }
+}
